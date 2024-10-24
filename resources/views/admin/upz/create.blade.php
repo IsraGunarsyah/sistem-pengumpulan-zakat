@@ -1,5 +1,5 @@
 @extends('admin.layout.app')
-
+@section('title', 'Daftar UPZ')
 @section('content')
 <div class="flex flex-col md:flex-row">
     <div class="flex-1 p-6 bg-gray-100 mt-16 md:ml-64">

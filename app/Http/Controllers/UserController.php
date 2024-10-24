@@ -16,7 +16,7 @@ class UserController extends Controller
         $upzList = upzs::all();
 
         // Return the view with the data
-        return view('user.index', compact('totalUPZ', 'upzList'));
+        return view('user.index', compact('totalUPZ', 'upzList')) -> with('title', 'Dashboard User');
         
     }
 

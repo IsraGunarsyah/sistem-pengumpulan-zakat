@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard</title>
+    <title>@yield('title', 'Default Title')</title>
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://kit.fontawesome.com/d9247fd719.js" crossorigin="anonymous"></script>
@@ -89,11 +89,9 @@
 
     <!-- Navbar -->
     <div class="bg-white shadow-md py-6 px-6 flex justify-between items-center fixed top-0 left-0 md:left-64 right-0 z-10 w-full">
-        <!-- Tombol toggle untuk layar kecil -->
         <button onclick="toggleSidebar()" class="md:hidden focus:outline-none">
             <i class="fas fa-bars h-6 w-6 text-green-600"></i>
         </button>
-        <!-- Logo dan teks di layar besar, disembunyikan di layar kecil -->
         <div class="hidden md:flex items-center text-green-600 font-bold">
             <span class="ml-2 text-2xl">Di Sistem Informasi Geografis Unit Pengumpul Zakat <br> BAZNAS Kota Bontang</span>
         </div>
@@ -105,10 +103,9 @@
     </div>
 
     <script>
-        // Apply a higher z-index to the map for responsiveness
         var mapDiv = document.getElementById('map');
         if (window.innerWidth <= 768) {
-            mapDiv.classList.add('relative', 'z-0'); // Lower z-index on mobile screens
+            mapDiv.classList.add('relative', 'z-0'); 
         }
 
 

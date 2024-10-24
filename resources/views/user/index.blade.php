@@ -1,5 +1,5 @@
 @extends('user.layout.app')
-
+@section('title', 'Dashboard User')
 @section('content')
 <div class="flex flex-col md:flex-row">
     <!-- Main Content -->

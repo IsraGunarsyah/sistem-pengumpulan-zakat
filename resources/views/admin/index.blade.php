@@ -1,5 +1,5 @@
 @extends('admin.layout.app')
-
+@section('title', 'Dashboard Admin')
 @section('content')
 <div class="flex flex-col md:flex-row">
     <!-- Main Content -->

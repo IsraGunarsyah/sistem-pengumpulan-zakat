@@ -7,7 +7,7 @@
     <title>BAZNAS Kota Bontang</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Animation for fading in elements */
+       
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -19,24 +19,20 @@
             transform: translateY(0);
         }
 
-        /* Additional animations */
+       
         .scale-on-hover:hover {
             transform: scale(1.05);
         }
     </style>
 </head>
 <body class="bg-white font-sans">
-    <!-- Logo positioned in the top-left corner with slight animation -->
+    
     <div class="absolute top-4 left-4 sm:left-6 md:left-10 lg:left-20 fade-in">
         <img src="{{ asset('images/logobaznas.png') }}" alt="BAZNAS Logo" class="h-16 sm:h-20 md:h-24 lg:h-28">
     </div>
     
-    <!-- Main container with flexible and responsive layout -->
     <div class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
-        <!-- Flexbox structure for content -->
         <div class="w-full max-w-7xl flex flex-col md:flex-row gap-8 items-center">
-            
-            <!-- Text Content with login button on the left side for larger screens -->
             <div class="text-center md:text-left fade-in md:flex-1 px-4 sm:px-6">
                 <h1 class="text-yellow-500 text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">Selamat Datang,</h1>
                 <h2 class="text-green-600 text-3xl sm:text-4xl md:text-4xl font-bold leading-snug md:leading-tight">
@@ -66,7 +62,7 @@
     </div>
 
     <script>
-        // Function to reveal elements when they are scrolled into view
+    
         function reveal() {
             const elements = document.querySelectorAll('.fade-in');
             elements.forEach(el => {
@@ -77,9 +73,8 @@
             });
         }
 
-        // Call the reveal function on scroll
+        
         window.addEventListener('scroll', reveal);
-        // Trigger it initially in case elements are already in view
         reveal();
     </script>
 </body>

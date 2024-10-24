@@ -9,7 +9,6 @@
 </head>
 <body class="min-h-screen flex items-center justify-center bg-gray-100 relative">
 
-    <!-- Background image with blur effect -->
     <div class="absolute inset-0 bg-cover bg-center filter blur-sm" style="background-image: url('{{ asset('images/baznaz.png') }}');"></div>
 
     <!-- Login Form Box -->
@@ -19,8 +18,7 @@
     <div class="bg-yellow-500 text-white p-4 rounded-md">
         {{ session('warning') }}
     </div>
-@endif
-
+    @endif
         <!-- Flash Message -->
         @if(session('success'))
             <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4">
